@@ -15,6 +15,10 @@
 :root {
     --secondary-color: #FFFFFF;
     --primary-color: #000000;
+    --bg-footer: #222222;
+    --share-screen-color: #4BC800;
+    --bg-end-meeting: #4A4A4A;
+    --color-end-meeting: #E92238;
 }
 
 /* debug */
@@ -27,6 +31,23 @@
 .main-flex {
     display: flex;
     flex-flow: row wrap;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-default {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* main */
@@ -87,4 +108,33 @@ main img {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+/* footer */
+
+footer {
+    background: var(--bg-footer);
+    color: var(--secondary-color);
+}
+
+footer i {
+    font-size: 30px;
+}
+
+.padding-right {
+    padding-right: 25px;
+}
+
+#share-screen {
+    color: var(--share-screen-color)
+}
+
+#end-meeting {
+    background-color: var(--bg-end-meeting);
+    padding: 30px;
+    color: var(--color-end-meeting) ;
+}
+
+.margin {
+    margin: 15px 10px;
 }
