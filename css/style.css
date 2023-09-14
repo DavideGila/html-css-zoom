@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* variables */
+
+:root {
+    --secondary-color: #FFFFFF;
+    --primary-color: #000000;
+}
+
+/* debug */
+
+.debug {
+    border: 1px solid red;
+}
+
+/* flex */
+.main-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+main img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    width: calc(100% / 7);
+}
+
+.card-content {
+    color: var(--secondary-color);
+}
